@@ -24,6 +24,13 @@ public class MovieRepository {
         logger.trace("entityManager.contains(movie: "+ movie.getName()+") : "+entityManager.contains(movie));
     }
 
+    @Transactional
+    public Movie findMovie(Long id){
+        Movie movie = entityManager.find(Movie.class,id);
+        logger.trace("entityManager.contains(movie: "+ movie.getName()+") : "+entityManager.contains(movie));
+        return movie;
+    }
+
     public List<Movie> getAll(){
         throw new UnsupportedOperationException();
     }

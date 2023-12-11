@@ -12,9 +12,8 @@
     <logger name="org.hibernate.SQL" level="DEBUG" />
     <logger name="org.hibernate.type.descriptor.sql.BasicBinder" level="TRACE" />
     <logger name="com.hibernate.tuto.repository.MovieRepository" level="TRACE" />
-
-    <!--<logger name="org.springframework.orm.jpa.JpaTransactionManager" level="DEBUG" />
-    <logger name="org.hibernate.internal.SessionImpl" level="TRACE" />-->
+    <logger name="org.springframework.orm.jpa.JpaTransactionManager" level="DEBUG" />
+    <logger name="org.hibernate.internal.SessionImpl" level="TRACE" />
     <root level="WARN">
         <appender-ref ref="STDOUT" />
     </root>
